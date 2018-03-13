@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
+// import ReactDom from 'react-dom'
 import App from './App'
 import fire from './fire'
-class saveValueTpFirebase extends Component{
+
+
+
+
+
+class SaveValueToFirebase extends React.Component{
     render(){
         return(
-            <div><h1> Hello {this.props.saveData.map((i)=> <li key={i}>{i}</li> )}</h1></div>
+            <div><h1>{this.props.SaveData}</h1></div>
         )   
     }
 }
-export default saveValueTpFirebase;
+export default SaveValueToFirebase;
