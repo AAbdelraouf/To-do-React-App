@@ -3,10 +3,6 @@ import React, { Component } from 'react';
 import App from './App'
 import fire from './fire'
 
-
-
-
-
 class SaveValueToFirebase extends React.Component{
     render(){
         return(
