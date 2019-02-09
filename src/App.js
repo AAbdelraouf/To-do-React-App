@@ -28,8 +28,8 @@ class App extends React.Component {
   }
 
 
-  // Pull data from firebase before the component mounts //
-  componentWillMount(){
+  // Pull data from firebase after the component mounts //
+  componentDidMount(){
     let messagesRef = fire.database().ref('React App').orderByKey().limitToLast(100);
       messagesRef.on('child_added', snapshot => {
         let message = { text: snapshot.val(), id: snapshot.key };
